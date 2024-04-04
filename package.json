@@ -6,7 +6,7 @@
     "dev--demo-app": "ng serve demo-app --open",
     "build-demo-app": "rm -rf ./dist/  && ng build ngx-scroll-position-restoration --configuration=production && ng build demo-app --configuration=production",
     "deploy-demo-app-on-github-pages": "npm run build-demo-app &&  cp ./dist/demo-app/index.html ./dist/demo-app/404.html && gh-pages -d ./dist/demo-app/ &&  rm -rf ./dist/",
-    "build": "rm -rf ./dist/ && ng build ngx-scroll-position-restoration --configuration=production &&  cp ./LICENSE,./README.md ./dist/ngx-scroll-position-restoration/",
+    "build": "rm -rf ./dist/ && ng build ngx-scroll-position-restoration --configuration=production",
     "publish-library": "npm run build && npm publish ./dist/ngx-scroll-position-restoration/ &&  rm -rf ./dist/"
   },
   "private": true,
